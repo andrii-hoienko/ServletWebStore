@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.logo {
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.graphiclogo {
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+}
+.error_messages {
+    color: red;
+}
+
+ul li ul li {
+    display: none;
+}
+
+ul li:hover ul li {
+    display: block;
+}
