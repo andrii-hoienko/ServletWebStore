@@ -7,7 +7,7 @@ import com.example.webstore.model.Status;
 import java.sql.*;
 import java.util.*;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
+
 
 public class OrderDAO implements Crud<Order> {
 
@@ -44,22 +44,6 @@ public class OrderDAO implements Crud<Order> {
         }
         return entity;
     }
-
-//    public void setUsersOrders(Order order) throws SQLException {
-//        String sql = "INSERT INTO users_orders (user_id, order_id) VALUES (?, ?)";
-//        try (Connection con = DataSource.getConnection()) {
-//            con.setAutoCommit(false);
-//            try (PreparedStatement statement = con.prepareStatement(sql)) {
-//                statement.setInt(1, order.getUserId());
-//                statement.setInt(2, order.getId());
-//                statement.execute();
-//            } catch (SQLException e) {
-//                con.rollback();
-//                e.printStackTrace();
-//            }
-//            con.commit();
-//        }
-//    }
 
     @Override
     public Optional<Order> findById(int id) throws Exception {

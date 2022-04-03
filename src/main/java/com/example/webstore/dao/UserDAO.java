@@ -79,7 +79,6 @@ public class UserDAO implements Crud<User>{
             statement.execute();
             ResultSet set = statement.getResultSet();
             set.next();
-            // check if set is empty
             User user = new User();
             user.setEmail(set.getString("email"));
             user.setFirstName(set.getString("first_name"));
