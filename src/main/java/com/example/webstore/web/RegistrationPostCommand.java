@@ -49,5 +49,4 @@ public class RegistrationPostCommand extends Command {
         }
         return PAGE_REGISTRATION;
     }
-
 }

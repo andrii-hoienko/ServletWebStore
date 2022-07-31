@@ -26,6 +26,7 @@ public class OrderDAO implements Crud<Order> {
         String sqlToInsert = "INSERT INTO orders (date, status, user_id) VALUES (?,?,?)";
         String sqlGetLast = "SELECT * FROM orders ORDER BY id DESC LIMIT 1";
         Connection con = DataSource.getConnection();
+
         try (PreparedStatement statementToInsert = con.prepareStatement(sqlToInsert);
              Statement statementGetLast = con.createStatement()) {
             statementToInsert.setTimestamp(1, entity.getDate());

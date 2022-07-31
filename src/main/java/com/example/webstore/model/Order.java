@@ -15,8 +15,6 @@ public class Order {
     private LocalDateTime date;
     private int userId;
 
-
-
     public int getUserId() {
         return userId;
     }
@@ -76,4 +74,5 @@ public class Order {
                 ", userId=" + userId +
                 '}';
     }
+
 }

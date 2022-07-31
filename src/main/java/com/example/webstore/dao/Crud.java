@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface Crud<T> {
-    T create (T entity);
+    T create (T entity) throws SQLException;
     Optional<T> findById(int id) throws Exception;
     List<T> findAll();
     void update(T entity);

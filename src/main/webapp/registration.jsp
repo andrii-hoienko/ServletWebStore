@@ -53,7 +53,7 @@
             <c:if test="${requestScope.validationErrors.contains('firstName')}">
                 <p class="error_messages"><fmt:message key="registration.error.first.name"/></p>
             </c:if>
-            <p><input type="text" id="f_name" name="first_name" class="feedback-input" placeholder="<fmt:message key="registration.first.name"/>" id = "f_name"></p>
+            <p><input type="text" name="first_name" class="feedback-input" placeholder="<fmt:message key="registration.first.name"/>" id = "f_name"></p>
 
             <c:if test="${requestScope.validationErrors.contains('lastName')}">
                 <p class="error_messages"><fmt:message key="registration.error.last.name"/></p>
